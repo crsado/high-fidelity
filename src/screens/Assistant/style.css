@@ -1,0 +1,197 @@
+.AI-assistant {
+    background-color: #292c31;
+    position: relative;
+    left: 75%;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 405px;
+    height: 540px;
+}
+
+.AI-assistant .div {
+    background-color: #292c31;
+    border: 1px solid;
+    border-color: #2da0da;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+    width: 405px;
+}
+
+.AI-assistant .overlap {
+    height: 55px;
+    left: 4px;
+    position: absolute;
+    top: 480px;
+    width: 397px;
+}
+
+.AI-assistant .rectangle {
+    background-color: #292c31;
+    border-radius: 20px;
+    height: 53px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 397px;
+}
+
+.AI-assistant .search {
+    align-items: center;
+    background-color: var(--color-background-default-default);
+    border: 1px solid;
+    border-color: var(--color-border-default-default);
+    border-radius: var(--size-radius-full);
+    display: flex;
+    gap: var(--size-space-200);
+    height: 55px;
+    left: 3px;
+    overflow: hidden;
+    padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
+    var(--size-space-400);
+    position: absolute;
+    top: 0;
+    width: 391px;
+}
+
+.AI-assistant .value {
+    background: transparent;
+    border: none;
+    color: var(--color-text-default-secondary);
+    flex: 1;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 16px;
+    padding: 0;
+    position: relative;
+}
+
+.AI-assistant .chevron-right {
+    height: 16px;
+    position: relative;
+    width: 16px;
+}
+
+.AI-assistant .icon {
+    height: 10px;
+    left: 5px;
+    position: absolute;
+    top: 3px;
+    width: 6px;
+}
+
+.AI-assistant .overlap-group {
+    height: 32px;
+    left: -5px;
+    position: absolute;
+    top: 3px;
+    width: 256px;
+}
+
+.AI-assistant .text-wrapper {
+    color: #ffffff;
+    font-family: "Roboto Flex-SemiBold", Helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    height: 32px;
+    left: 0;
+    letter-spacing: 0.50px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 256px;
+}
+
+.AI-assistant .x {
+    height: 28px;
+    left: 21px;
+    position: absolute;
+    top: 1px;
+    width: 28px;
+}
+
+.AI-assistant .img {
+    height: 16px;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    width: 16px;
+}
+
+.AI-assistant .line {
+    height: 1px;
+    left: 8px;
+    object-fit: cover;
+    position: absolute;
+    top: 44px;
+    width: 373px;
+}
+
+.AI-assistant .logo {
+    height: 32px;
+    left: 12px;
+    object-fit: cover;
+    position: absolute;
+    top: 67px;
+    width: 32px;
+}
+
+.AI-assistant .overlap-2 {
+    height: 41px;
+    left: 66px;
+    position: absolute;
+    top: 62px;
+    width: 323px;
+}
+
+.AI-assistant .text-bubble {
+    background-color: #00a0d6;
+    border-radius: 16px;
+    height: 41px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 248px;
+}
+
+.AI-assistant .p {
+    color: #ffffff;
+    font-family: "Roboto Flex-SemiBold", Helvetica;
+    font-size: 16px;
+    font-weight: 600;
+    height: 16px;
+    left: 8px;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    position: absolute;
+    top: 12px;
+    width: 315px;
+}
+
+.AI-assistant .div-wrapper {
+    height: 13px;
+    left: 359px;
+    position: absolute;
+    top: 17px;
+    width: 27px;
+}
+
+.AI-assistant .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Roboto Flex-Bold", Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    height: 13px;
+    left: 0;
+    letter-spacing: 0.50px;
+    line-height: 16px;
+    position: absolute;
+    top: -1px;
+    white-space: nowrap;
+    width: 27px;
+}
