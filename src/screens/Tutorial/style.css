@@ -1,0 +1,146 @@
+.tutorial-page {
+    background-color: #21294a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.tutorial-page .div {
+    background-color: #21294a;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+}
+
+.tutorial-page .screenshot {
+    height: 82px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 225px;
+}
+
+.tutorial-page .rectangle {
+    background-color: #0a1020;
+    height: 82px;
+    left: 225px;
+    position: absolute;
+    top: 0;
+    width: 1213px;
+}
+
+.tutorial-page .text-wrapper {
+    color: #ffffff;
+    font-family: "Roboto Flex-Regular", Helvetica;
+    font-size: 96px;
+    font-weight: 400;
+    height: 167px;
+    left: 112px;
+    letter-spacing: -0.25px;
+    line-height: 64px;
+    position: absolute;
+    top: 97px;
+    width: 798px;
+}
+
+.tutorial-page .menu {
+    align-items: flex-start;
+    border-radius: 4px;
+    display: flex;
+    height: 176px;
+    left: 94px;
+    max-width: 280px;
+    padding: 8px 0px;
+    position: absolute;
+    top: 281px;
+    width: 280px;
+}
+
+.tutorial-page .menu-list {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    margin-bottom: -280.00px;
+    margin-right: -528.00px;
+    position: relative;
+    width: 808px;
+}
+
+.tutorial-page .menu-list-item {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    padding: 19px 0px;
+    position: relative;
+    width: 100%;
+}
+
+.tutorial-page .state-layer {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 12px;
+    height: 56px;
+    padding: 8px 12px;
+    position: relative;
+    width: 100%;
+}
+
+.tutorial-page .leading-element {
+    background-image: url(../../assets/pencil.svg);
+    background-size: 100% 100%;
+    height: 64px;
+    margin-bottom: -12.00px;
+    margin-top: -12.00px;
+    position: relative;
+    width: 64px;
+}
+
+.tutorial-page .content {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: -12.00px;
+    margin-top: -12.00px;
+    position: relative;
+}
+
+.tutorial-page .label-text {
+    align-self: stretch;
+    color: #ffffff;
+    font-family: "Roboto Flex-SemiBold", Helvetica;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 64px;
+    margin-top: -1.00px;
+    position: relative;
+    text-decoration: underline;
+}
+
+.tutorial-page .leading-element-2 {
+    background-image: url(../../assets/photo.svg);
+    background-size: 100% 100%;
+    height: 64px;
+    margin-bottom: -12.00px;
+    margin-top: -12.00px;
+    position: relative;
+    width: 64px;
+}
+
+.tutorial-page .leading-element-3 {
+    background-image: url(../../assets/option.svg);
+    background-size: 100% 100%;
+    height: 64px;
+    margin-bottom: -12.00px;
+    margin-top: -12.00px;
+    position: relative;
+    width: 64px;
+}
