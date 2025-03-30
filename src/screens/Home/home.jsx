@@ -1,9 +1,8 @@
 import React from "react";
-import chatBubble from "../../assets/chat-bubble.svg";
 import screenshot202503041749301 from "../../assets/screenshot-2025-03-04-174930-1.png";
 import "./style.css";
 import {Link} from "react-router-dom";
-import {AiAssistant, AssistantHelper} from "../Assistant/assistant.jsx";
+import {AssistantHelper} from "../Assistant/assistant.jsx";
 
 export const Homepage = () => {
     return (

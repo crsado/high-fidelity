@@ -6,6 +6,7 @@ import logo from "../../assets/icon.png";
 import "./style.css";
 import "./styleguide.css";
 import chatBubble from "../../assets/chat-bubble.svg";
+import ask from "./gpt.js"
 
 export function AssistantHelper() {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -35,17 +36,20 @@ export const AiAssistant = () => {
                 <div className="overlap">
 
                     <div className="search">
-                        <input
+                        <textarea
+                            id="aiInput"
                             className="value"
                             placeholder="Type your message here"
-                            type="string"
+                            name="input"
                         />
-
-                        <img
+                        <button onClick={async() => {
+                            await ask(document.getElementById("aiInput").value)}}>
+                            <img
                             className="chevron-right"
-                            alt="Chevron right"
                             src={chevronRight}
-                        />
+                            alt="Submit"
+                            />
+                        </button>
                     </div>
                 </div>
 
