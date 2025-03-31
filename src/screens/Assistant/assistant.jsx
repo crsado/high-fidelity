@@ -85,10 +85,10 @@ export function AiMessage(props) {
 export function UserMessage(props) {
     return (
         <div className="user-message">
-            <img className="pfp" alt="User" src={user}/>
             <div className="user-text-bubble">
                 <span className="content">{props.message}</span>
             </div>
+            <img className="pfp" alt="User" src={user}/>
         </div>
     )
 }
