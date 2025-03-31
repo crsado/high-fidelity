@@ -29,12 +29,28 @@ export function AssistantHelper() {
 
 }
 
-export const AiAssistant = () => {
+const AiAssistant = () => {
     return (
         <div className="AI-assistant">
-            <div className="div">
-                <div className="overlap">
+            <div className="box">
+                <div className="header">
+                    <img className="x" alt="exit" src={cross}/>
+                    <div className="chat-title">AI Assistant</div>
+                    <div className="help">?</div>
+                </div>
 
+                <img className="line" alt="Line" src={line1}/>
+
+                <div className="messages">
+                    <div className="message">
+                        <img className="logo" alt="Logo" src={logo}/>
+                        <div className="text-bubble">
+                            <span className="content">Hi, how can I help you today?</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="text-field">
                     <div className="search">
                         <textarea
                             id="aiInput"
@@ -42,37 +58,16 @@ export const AiAssistant = () => {
                             placeholder="Type your message here"
                             name="input"
                         />
-                        <button onClick={async() => {
-                            await ask(document.getElementById("aiInput").value)}}>
+                        <button className="submit" onClick={async () => {
+                            await ask(document.getElementById("aiInput").value)
+                        }}>
                             <img
-                            className="chevron-right"
-                            src={chevronRight}
-                            alt="Submit"
+                                className="chevron-right"
+                                src={chevronRight}
+                                alt="Submit"
                             />
                         </button>
                     </div>
-                </div>
-
-                <div className="overlap-group">
-                    <div className="text-wrapper">AI Assistant</div>
-
-                    <div className="x">
-                        <img className="icon" alt="Icon" src={cross} />
-                    </div>
-                </div>
-
-                <img className="line" alt="Line" src={line1} />
-
-                <img className="logo" alt="Logo" src={logo} />
-
-                <div className="overlap-2">
-                    <div className="text-bubble" />
-
-                    <p className="p">Hi, how can I help you today?</p>
-                </div>
-
-                <div className="div-wrapper">
-                    <div className="text-wrapper-2">?</div>
                 </div>
             </div>
         </div>

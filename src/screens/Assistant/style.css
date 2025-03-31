@@ -3,29 +3,45 @@
     position: relative;
     left: 75%;
     top: 25%;
-    display: flex;
-    flex-direction: row;
+    display: flow;
     justify-content: center;
     width: 405px;
     height: 540px;
 }
 
-.AI-assistant .div {
+.AI-assistant .messages {
+    flex-grow: 1;
+    height: auto;
+    width: auto;
+    position: static;
+}
+
+.AI-assistant .message {
+    margin: var(--size-space-200);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-space-200);
+}
+
+.AI-assistant .box {
     background-color: #292c31;
     border: 1px solid;
     border-color: #2da0da;
-    height: 540px;
+    height: 100%;
     overflow: hidden;
-    position: relative;
-    width: 405px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.AI-assistant .overlap {
-    height: 55px;
+.AI-assistant .text-field {
+    height: auto;
     left: 4px;
-    position: absolute;
+    position: static;
     top: 480px;
-    width: 397px;
+    width: 100%;
+    align-self: flex-end;
 }
 
 .AI-assistant .rectangle {
@@ -51,16 +67,16 @@
     overflow: hidden;
     padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
     var(--size-space-400);
-    position: absolute;
+    position: static;
     top: 0;
-    width: 391px;
+    width: 371px;
 }
 
 .AI-assistant .value {
     background: transparent;
     border: none;
     color: var(--color-text-default-secondary);
-    flex: 1;
+    flex: auto;
     font-family: "Roboto Flex-Regular", Helvetica;
     font-size: 16px;
     font-weight: 400;
@@ -70,49 +86,49 @@
     position: relative;
 }
 
+.AI-assistant .submit {
+    background: transparent;
+    border: none;
+    flex: auto;
+}
+
 .AI-assistant .chevron-right {
     height: 16px;
     position: relative;
     width: 16px;
 }
 
-.AI-assistant .icon {
-    height: 10px;
-    left: 5px;
-    position: absolute;
-    top: 3px;
-    width: 6px;
+.AI-assistant .x {
+    height: 16px;
+    width: 16px;
 }
 
-.AI-assistant .overlap-group {
+.AI-assistant .header {
+    padding: var(--size-space-200);
     height: 32px;
-    left: -5px;
-    position: absolute;
-    top: 3px;
-    width: 256px;
+    position: static;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-space-200);
 }
 
-.AI-assistant .text-wrapper {
+.AI-assistant .chat-title {
     color: #ffffff;
     font-family: "Roboto Flex-SemiBold", Helvetica;
     font-size: 20px;
     font-weight: 600;
-    height: 32px;
+    height: 20px;
     left: 0;
     letter-spacing: 0.50px;
     line-height: 24px;
-    position: absolute;
     text-align: center;
+    vertical-align: center;
     top: 0;
     width: 256px;
-}
-
-.AI-assistant .x {
-    height: 28px;
-    left: 21px;
-    position: absolute;
-    top: 1px;
-    width: 28px;
+    flex-grow: 1;
 }
 
 .AI-assistant .img {
@@ -125,19 +141,17 @@
 
 .AI-assistant .line {
     height: 1px;
-    left: 8px;
     object-fit: cover;
+    width: 389px;
     position: absolute;
-    top: 44px;
-    width: 373px;
+    left: var(--size-space-200);
 }
 
 .AI-assistant .logo {
     height: 32px;
     left: 12px;
     object-fit: cover;
-    position: absolute;
-    top: 67px;
+    position: static;
     width: 32px;
 }
 
@@ -152,46 +166,33 @@
 .AI-assistant .text-bubble {
     background-color: #00a0d6;
     border-radius: 16px;
-    height: 41px;
+    height: auto;
     left: 0;
-    position: absolute;
+    position: relative;
     top: 0;
-    width: 248px;
+    width: auto;
+    padding: var(--size-space-200);
 }
 
-.AI-assistant .p {
+.AI-assistant .content {
     color: #ffffff;
     font-family: "Roboto Flex-SemiBold", Helvetica;
     font-size: 16px;
     font-weight: 600;
     height: 16px;
-    left: 8px;
     letter-spacing: 0.50px;
     line-height: 16px;
-    position: absolute;
-    top: 12px;
-    width: 315px;
+    width: auto;
 }
 
-.AI-assistant .div-wrapper {
-    height: 13px;
-    left: 359px;
-    position: absolute;
-    top: 17px;
-    width: 27px;
-}
-
-.AI-assistant .text-wrapper-2 {
+.AI-assistant .help {
     color: #ffffff;
     font-family: "Roboto Flex-Bold", Helvetica;
     font-size: 24px;
     font-weight: 700;
     height: 13px;
-    left: 0;
     letter-spacing: 0.50px;
     line-height: 16px;
-    position: absolute;
-    top: -1px;
     white-space: nowrap;
-    width: 27px;
+    width: auto;
 }
