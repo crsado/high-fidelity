@@ -9,19 +9,12 @@
     height: 540px;
 }
 
-.AI-assistant .messages {
+.AI-assistant #message-box {
     flex-grow: 1;
     height: auto;
     width: auto;
     position: static;
-}
-
-.AI-assistant .message {
-    margin: var(--size-space-200);
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    gap: var(--size-space-200);
+    overflow: auto;
 }
 
 .AI-assistant .box {
@@ -147,7 +140,7 @@
     left: var(--size-space-200);
 }
 
-.AI-assistant .logo {
+.AI-assistant .pfp {
     height: 32px;
     left: 12px;
     object-fit: cover;
@@ -163,19 +156,7 @@
     width: 323px;
 }
 
-.AI-assistant .text-bubble {
-    background-color: #00a0d6;
-    border-radius: 16px;
-    height: auto;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: auto;
-    padding: var(--size-space-200);
-}
-
 .AI-assistant .content {
-    color: #ffffff;
     font-family: "Roboto Flex-SemiBold", Helvetica;
     font-size: 16px;
     font-weight: 600;
@@ -195,4 +176,45 @@
     line-height: 16px;
     white-space: nowrap;
     width: auto;
+}
+
+.AI-assistant .ai-message {
+    margin: var(--size-space-200);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-space-200);
+}
+
+.AI-assistant .ai-text-bubble {
+    background-color: #00a0d6;
+    border-radius: 16px;
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+    padding: var(--size-space-200);
+    color: white;
+}
+
+.AI-assistant .user-message {
+    margin: var(--size-space-200);
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: var(--size-space-200);
+}
+
+.AI-assistant .user-text-bubble {
+    background-color: white;
+    border-radius: 16px;
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: auto;
+    padding: var(--size-space-200);
+    color: black;
 }

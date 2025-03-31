@@ -1,4 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
+import {AiMessage, UserMessage} from "./assistant.jsx";
+import {createRoot} from "react-dom/client";
 
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_KEY });
 
@@ -24,8 +26,18 @@ const cache = await ai.caches.create({
 });
 console.log("Cache created:", cache);
 
+let lastMessage
+
 const ask = async function(input) {
+    let parent = document.getElementById("message-box")
     console.log(input);
+    document.getElementById("aiInput").value = "";
+    await createRoot(parent.appendChild(document.createElement("div"))).render(<UserMessage message={input} />)
+    parent.scrollTop = parent.scrollHeight;
+
+    if (lastMessage) {
+        input = "Your previous message sent was the following: \"" + lastMessage + "\" The next user input is the following: \"" + input + "\""
+    }
 
     const response = await ai.models.generateContent({
         model: modelName,
@@ -33,6 +45,9 @@ const ask = async function(input) {
         config: {cachedContent: cache.name},
     });
     console.log(response.text);
+    await createRoot(parent.appendChild(document.createElement("div"))).render(<AiMessage message={response.text} />)
+    setTimeout(() => {parent.scrollTop = parent.scrollHeight}, 1)
+    lastMessage = response.text
 }
 
 export default ask;
