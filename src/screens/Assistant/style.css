@@ -196,6 +196,7 @@
     width: auto;
     padding: var(--size-space-200);
     color: white;
+    word-break: break-word;
 }
 
 .AI-assistant .user-message {
@@ -217,4 +218,5 @@
     width: auto;
     padding: var(--size-space-200);
     color: black;
+    word-break: break-word;
 }
