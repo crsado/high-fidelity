@@ -8,43 +8,39 @@ export const Homepage = () => {
     return (
         <div className="homepage">
             <div className="div">
-                <Link to="/editor">
-                    <div className="overlap">
-                        <div className="rectangle"/>
-
-                        <div className="text-wrapper">AI Photo Editor</div>
-                    </div>
-                </Link>
-
-                <div className="overlap-group">
-                    <div className="rectangle-2"/>
-
-                    <div className="text-wrapper-2">AI Image Generator</div>
+                <div className="topbar">
+                    <img
+                        className="screenshot"
+                        alt="Screenshot"
+                        src={screenshot202503041749301}
+                    />
                 </div>
 
-                <div className="overlap-2">
-                    <div className="rectangle-3"/>
-
-                    <div className="text-wrapper-3">Download</div>
+                <div className="row-1">
+                    <Link to="/editor">
+                        <div className="rectangle">
+                            <div style={{color: '#8b38d7'}} className="text-wrapper">AI Photo Editor</div>
+                        </div>
+                    </Link>
+                    <div className="rectangle">
+                        <div style={{color: '#2da0da'}} className="text-wrapper">AI Image Generator</div>
+                    </div>
                 </div>
 
-                <Link to="/tutorials">
-                    <div className="overlap-group-2">
-                        <div className="rectangle-3"/>
 
-                        <div className="text-wrapper-4">Tutorials</div>
+                <div className="row-1">
+                    <div className="rectangle-2">
+                        <div className="text-wrapper-2">Download</div>
                     </div>
-                </Link>
+                    <Link to="/tutorials">
+                        <div className="rectangle-2">
+                            <div className="text-wrapper-2">Tutorials</div>
+                        </div>
+                    </Link>
+                </div>
 
-                <img
-                    className="screenshot"
-                    alt="Screenshot"
-                    src={screenshot202503041749301}
-                />
 
-                <div className="rectangle-4"/>
-
-                <AssistantHelper />
+                <AssistantHelper/>
             </div>
         </div>
     );

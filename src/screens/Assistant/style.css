@@ -1,12 +1,12 @@
 .AI-assistant {
-    background-color: #292c31;
-    position: relative;
-    left: 75%;
-    top: 25%;
+    position: absolute;
+    right: 3%;
+    top: 30%;
     display: flow;
     justify-content: center;
     width: 405px;
     height: 540px;
+
 }
 
 .AI-assistant #message-box {
@@ -20,7 +20,8 @@
 .AI-assistant .box {
     background-color: #292c31;
     border: 1px solid;
-    border-color: #2da0da;
+    border-color: #4a4a53;
+    border-radius: 16px;
     height: 100%;
     overflow: hidden;
     width: 100%;
@@ -36,30 +37,20 @@
     align-self: flex-end;
 }
 
-.AI-assistant .rectangle {
-    background-color: #292c31;
-    border-radius: 20px;
-    height: 53px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 397px;
-}
-
 .AI-assistant .search {
     align-items: center;
     background-color: var(--color-background-default-default);
     border: 1px solid;
     border-color: var(--color-border-default-default);
-    border-radius: var(--size-radius-full);
+    border-radius: 16px;
     display: flex;
     gap: var(--size-space-200);
-    height: 55px;
+    height: auto;
     overflow: hidden;
     padding: var(--size-space-300) var(--size-space-400) var(--size-space-300)
     var(--size-space-400);
     position: static;
-    width: 371px;
+    width: auto;
 }
 
 .AI-assistant .value {
@@ -79,7 +70,7 @@
 .AI-assistant .submit {
     background: transparent;
     border: none;
-    flex: auto;
+    width: 16px;
 }
 
 .AI-assistant .chevron-right {

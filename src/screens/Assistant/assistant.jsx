@@ -19,12 +19,11 @@ export function AssistantHelper() {
 
     return (
         <>
-            <div className="chatbot-button" onClick={toggleAssistant}>
-                <img className="chat-bubble" alt="Chat bubble" src={chatBubble}/>
-
-                <div className="text-wrapper-5">AI Assistant</div>
-            </div>
             {isOpen && <AiAssistant/>}
+            <div className="chatbot-button" onClick={toggleAssistant}>
+                <div className="text-wrapper-3">AI Assistant</div>
+                <img className="chat-bubble" alt="Chat bubble" src={chatBubble}/>
+            </div>
         </>
     );
 }
@@ -38,7 +37,7 @@ const AiAssistant = () => {
         <div id="chat-root" className="AI-assistant">
             <div className="box">
                 <div className="header">
-                    <img className="x" alt="exit" src={cross} />
+                    <img className="x" alt="exit" src={cross}/>
                     <div className="chat-title">AI Assistant</div>
                     <div className="help">?</div>
                 </div>
