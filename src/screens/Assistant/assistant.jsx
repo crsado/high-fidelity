@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import chevronRight from "../../assets/chevron.svg";
 import cross from "../../assets/x.svg";
 import line1 from "../../assets/Line 1.svg";
@@ -8,6 +8,7 @@ import "./style.css";
 import "./styleguide.css";
 import chatBubble from "../../assets/chat-bubble.svg";
 import ask from "./gpt.jsx"
+import {initMessage} from "./gpt.jsx";
 
 export function AssistantHelper() {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -29,6 +30,10 @@ export function AssistantHelper() {
 }
 
 const AiAssistant = () => {
+    useEffect(() => {
+        initMessage()
+    })
+
     return (
         <div id="chat-root" className="AI-assistant">
             <div className="box">

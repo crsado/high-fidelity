@@ -26,7 +26,11 @@ const cache = await ai.caches.create({
 });
 console.log("Cache created:", cache);
 
-let lastMessage = "Hi, how can I help you today?"
+let lastMessage
+
+export function initMessage() {
+    lastMessage = "Hi, how can I help you today?"
+}
 
 const ask = async function(input) {
     let parent = document.getElementById("message-box")
