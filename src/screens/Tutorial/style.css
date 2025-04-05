@@ -8,27 +8,25 @@
 
 .tutorial-page .div {
     background-color: #21294a;
-    height: 1024px;
+    height: 100vh;
     position: relative;
-    width: 1440px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 128px;
 }
 
 .tutorial-page .screenshot {
-    height: 82px;
-    left: 0;
+    height: 96px;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 225px;
+    width: auto;
 }
 
 .tutorial-page .rectangle {
     background-color: #0a1020;
-    height: 82px;
-    left: 225px;
+    height: 96px;
     position: absolute;
-    top: 0;
-    width: 1213px;
+    width: 100vw;
 }
 
 .tutorial-page .text-wrapper {
@@ -36,26 +34,19 @@
     font-family: "Roboto Flex-Regular", Helvetica;
     font-size: 96px;
     font-weight: 400;
-    height: 167px;
-    left: 112px;
-    letter-spacing: -0.25px;
-    line-height: 64px;
-    position: absolute;
-    top: 97px;
-    width: 798px;
+    height: auto;
+    width: auto;
+    margin-top: 128px;
 }
 
 .tutorial-page .menu {
     align-items: flex-start;
     border-radius: 4px;
     display: flex;
-    height: 176px;
-    left: 94px;
+    height: auto;
     max-width: 280px;
-    padding: 8px 0px;
-    position: absolute;
-    top: 281px;
-    width: 280px;
+    padding: 8px 0;
+    width: auto;
 }
 
 .tutorial-page .menu-list {
@@ -123,6 +114,7 @@
     margin-top: -1.00px;
     position: relative;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .tutorial-page .leading-element-2 {
@@ -143,4 +135,37 @@
     margin-top: -12.00px;
     position: relative;
     width: 64px;
+}
+
+#overlayRoot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darken {
+    background-color: #000000;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: auto;
+}
+
+.tutorial-page .box {
+    background-color: #0a1020;
+    width: 70%;
+    height: 70%;
+    overflow-y: scroll;
+    color: white;
+    font-family: "Roboto Flex-SemiBold", Helvetica;
+    z-index: 1;
+    border-radius: 16px;
+    padding: 16px;
 }
