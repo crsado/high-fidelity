@@ -6,7 +6,7 @@ const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_KEY });
 
 // Change if hosted on web
 // Current website root url
-const url = "http://localhost:5173/"
+const url = window.location.origin + '/';
 
 const modelName = "gemini-1.5-flash-002"
 
