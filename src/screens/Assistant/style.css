@@ -1,7 +1,7 @@
 .AI-assistant {
     position: absolute;
     right: 3%;
-    top: 30%;
+    bottom: calc(3% + 100px);
     display: flow;
     justify-content: center;
     width: 405px;
